@@ -1,0 +1,255 @@
+{
+    "Labels": [
+        {
+            "Name": "Person",
+            "Confidence": 97.60159301757812,
+            "Instances": [
+                {
+                    "BoundingBox": {
+                        "Width": 0.026259049773216248,
+                        "Height": 0.054136212915182114,
+                        "Left": 0.03679655119776726,
+                        "Top": 0.23670457303524017
+                    },
+                    "Confidence": 97.60159301757812
+                }
+            ],
+            "Parents": [],
+            "Aliases": [
+                {
+                    "Name": "Human"
+                }
+            ],
+            "Categories": [
+                {
+                    "Name": "Person Description"
+                }
+            ]
+        },
+        {
+            "Name": "Computer",
+            "Confidence": 97.40052795410156,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Electronics"
+                }
+            ],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Technology and Computing"
+                }
+            ]
+        },
+        {
+            "Name": "Electronics",
+            "Confidence": 97.40052795410156,
+            "Instances": [],
+            "Parents": [],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Technology and Computing"
+                }
+            ]
+        },
+        {
+            "Name": "Pc",
+            "Confidence": 97.40052795410156,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Computer"
+                },
+                {
+                    "Name": "Electronics"
+                }
+            ],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Technology and Computing"
+                }
+            ]
+        },
+        {
+            "Name": "Text",
+            "Confidence": 87.2811050415039,
+            "Instances": [],
+            "Parents": [],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Text and Documents"
+                }
+            ]
+        },
+        {
+            "Name": "Head",
+            "Confidence": 72.12422180175781,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Person"
+                }
+            ],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Person Description"
+                }
+            ]
+        },
+        {
+            "Name": "Face",
+            "Confidence": 65.9600830078125,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Head"
+                },
+                {
+                    "Name": "Person"
+                }
+            ],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Person Description"
+                }
+            ]
+        },
+        {
+            "Name": "Computer Hardware",
+            "Confidence": 63.539791107177734,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Electronics"
+                },
+                {
+                    "Name": "Hardware"
+                }
+            ],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Technology and Computing"
+                }
+            ]
+        },
+        {
+            "Name": "Hardware",
+            "Confidence": 63.539791107177734,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Electronics"
+                }
+            ],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Technology and Computing"
+                }
+            ]
+        },
+        {
+            "Name": "File",
+            "Confidence": 57.35502243041992,
+            "Instances": [],
+            "Parents": [],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Text and Documents"
+                }
+            ]
+        },
+        {
+            "Name": "Page",
+            "Confidence": 56.962467193603516,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Text"
+                }
+            ],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Text and Documents"
+                }
+            ]
+        },
+        {
+            "Name": "Monitor",
+            "Confidence": 56.82540512084961,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Computer Hardware"
+                },
+                {
+                    "Name": "Electronics"
+                },
+                {
+                    "Name": "Hardware"
+                },
+                {
+                    "Name": "Screen"
+                }
+            ],
+            "Aliases": [
+                {
+                    "Name": "Display"
+                },
+                {
+                    "Name": "Digital Display"
+                },
+                {
+                    "Name": "LCD Screen"
+                }
+            ],
+            "Categories": [
+                {
+                    "Name": "Technology and Computing"
+                }
+            ]
+        },
+        {
+            "Name": "Screen",
+            "Confidence": 56.82540512084961,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Electronics"
+                }
+            ],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Technology and Computing"
+                }
+            ]
+        },
+        {
+            "Name": "Webpage",
+            "Confidence": 55.71534729003906,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "File"
+                }
+            ],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Technology and Computing"
+                }
+            ]
+        }
+    ],
+    "LabelModelVersion": "3.0"
+}
