@@ -43,4 +43,34 @@ while True:
 
 # Get the face search results
 results = rekognition_client.get_face_search(JobId=job_id, MaxResults=1000)
-print(results)
+
+# Helper function to recursively find the 'FaceId' in the nested dictionary
+def find_face_id(obj):
+    if 'FaceId' in obj:
+        return obj['FaceId']
+    for key, value in obj.items():
+        if isinstance(value, dict):
+            found_face_id = find_face_id(value)
+            if found_face_id:
+                return found_face_id
+    return None
+
+# Extract emotions and timestamps for each face
+if 'Persons' in results:
+    for person in results['Persons']:
+        face_id = find_face_id(person)
+        if face_id:
+            timestamp_ms = person['Timestamp']
+            
+            # Emotions are available in the 'Face' object
+            if 'Face' in person:
+                face_emotions = person['Face']['Emotions']
+                
+                # Extract and print emotions along with timestamp
+                print(f"Face ID: {face_id}, Timestamp (ms): {timestamp_ms}")
+                for emotion in face_emotions:
+                    emotion_type = emotion['Type']
+                    confidence = emotion['Confidence']
+                    print(f"Emotion: {emotion_type}, Confidence: {confidence}")
+else:
+    print("No faces detected in the video.")
